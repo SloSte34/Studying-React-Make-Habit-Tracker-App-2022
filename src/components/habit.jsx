@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class Habit extends Component {
+  componentDidMount() {
+    console.log(`habit : ${this.props.habit.name} is mounted. `);
+  }
+
+  componentWillUnmount() {
+    console.log(`habit : ${this.props.habit.name} will unmount.`);
+  }
+
   handleIncrement = () => {
     //state object 안에 있는  count를 증가 한 뒤 state를 업데이트 해야 한다.
     //this.state.count ++ ;
