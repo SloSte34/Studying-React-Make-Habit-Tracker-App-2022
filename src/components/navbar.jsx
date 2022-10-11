@@ -5,13 +5,13 @@ class Navbar extends Component {
     return (
       <div>
         <i className='navbar-logo fas fa-check'></i>
-        <span>민수 마트 재고 수량 체크 시스템</span>
+        <span>My Habit Tracker</span>
         <br />
         <span className='navbar-count'>
-          관리 물품 종류 : {this.props.totalStock}
+          Total Habit : {this.props.totalHabit}
         </span>
         <br />
-        <span>재고 존재 물품 종류 : {this.props.onStock}</span>
+        <span>Active Habit : {this.props.activeHabit}</span>
       </div>
     );
   }
